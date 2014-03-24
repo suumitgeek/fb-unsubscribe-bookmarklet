@@ -2,9 +2,12 @@ var nodes = document.getElementsByClassName('notif'), i, halt = false, sub_apps 
 
 for (var i=0; i<nodes.length; i++) {
 	var node = nodes[i];  	
+        var new_arr = [];
 	if (node.querySelector("[type=checkbox]").checked == true) {
-    	sub_apps.push(node);
+    	//sub_apps.push(node);
+        new_arr.push(node);
     }
+    sub_apps.extend(new_arr);
 }
 
 var j = sub_apps.length;
