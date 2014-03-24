@@ -27,7 +27,7 @@ function unsubscriber(sub_apps) {
 }
 
 function haltFn() {
-    halt = true;
+    halt = false;
     return false; // prevent default event
 }
 
